@@ -18,7 +18,7 @@
         android:theme="@style/Theme.APIMethodsJsonServer"
         tools:targetApi="31">
         <activity
-            android:name=".post_method.PostActivity"
+            android:name=".post_method.view.PostActivity"
             android:exported="false" />
         <activity
             android:name=".get_method.view.GetActivity"

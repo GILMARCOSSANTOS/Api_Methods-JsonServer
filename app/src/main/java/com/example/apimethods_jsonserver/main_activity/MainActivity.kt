@@ -6,7 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.apimethods_jsonserver.post_method.PostActivity
+import com.example.apimethods_jsonserver.post_method.view.PostActivity
 import com.example.apimethods_jsonserver.R
 import com.example.apimethods_jsonserver.databinding.ActivityMainBinding
 import com.example.apimethods_jsonserver.get_method.view.GetActivity
