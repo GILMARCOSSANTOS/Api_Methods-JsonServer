@@ -34,6 +34,7 @@ android {
         jvmTarget = "1.8"
     }
 
+    /* Vinculador de Vieww */
     viewBinding {
         enable = true
     }
@@ -41,6 +42,12 @@ android {
 
 dependencies {
 
+    /* Retrofit Square */
+    implementation(libs.gson.google)
+    implementation(libs.retrofit.converter.gson)
+    implementation(libs.retrofit.squareup)
+
+    /* Dependências Nativas */
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.apimethods_jsonserver.post_method.PostActivity
 import com.example.apimethods_jsonserver.R
 import com.example.apimethods_jsonserver.databinding.ActivityMainBinding
-import com.example.apimethods_jsonserver.get_method.GetActivity
+import com.example.apimethods_jsonserver.get_method.view.GetActivity
 import com.google.android.material.textview.MaterialTextView
 
 class MainActivity : AppCompatActivity() {

@@ -13,13 +13,8 @@
         android:layout_marginBottom="11dp"
         android:orientation="vertical">
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black" />
-
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView_Id_componentGet_id"
+            android:id="@+id/textView_userId_componentGet_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -27,10 +22,10 @@
             android:background="@color/black"
             android:textStyle="bold"
             tools:text="▬▬▬ Nº  IDENTIFICAÇÃO  ▬▬▬ "
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView_name_componentGet_id"
+            android:id="@+id/textView_userName_componentGet_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -40,7 +35,7 @@
             android:textSize="15sp" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView_phone_componentGet_id"
+            android:id="@+id/textView_userPhone_componentGet_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -50,29 +45,14 @@
             android:textSize="15sp"/>
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView_city_componentGet_id"
+            android:id="@+id/textView_userAge_componentGet_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:textStyle="bold"
             android:layout_marginStart="7dp"
-            tools:text="▬ CIDADE: "
+            tools:text="▬ IDADE: "
             android:textSize="15sp" />
-
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textView_cep_componentGet_id"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:textStyle="bold"
-            android:layout_marginStart="7dp"
-            tools:text="▬ CEP: "
-            android:textSize="15sp" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

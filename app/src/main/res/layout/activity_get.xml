@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".get_method.GetActivity">
+    tools:context=".get_method.view.GetActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout_includeTitle_id"
