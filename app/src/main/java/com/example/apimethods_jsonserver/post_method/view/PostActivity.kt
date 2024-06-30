@@ -21,7 +21,6 @@ class PostActivity : AppCompatActivity() {
     private lateinit var viewBinding: ActivityPostBinding
     private lateinit var apiController: PostController
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
@@ -30,6 +29,7 @@ class PostActivity : AppCompatActivity() {
         setContentView(viewBinding.root)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -42,6 +42,7 @@ class PostActivity : AppCompatActivity() {
     }
 
     private fun postData() {
+
         val progressBar = findViewById<ProgressBar>(R.id.progressarBar_id)
         val buttonSendData = viewBinding.buttonSendDataPostId
 
@@ -57,11 +58,15 @@ class PostActivity : AppCompatActivity() {
             progressBar.visibility = View.VISIBLE
 
             apiController.postData(requestData) { response, throwable ->
+
                 progressBar.visibility = View.INVISIBLE
+
                 if (response != null) {
+
                     val responseData = response.body()
                     Toast.makeText(this, "Dados POST enviados com sucesso", Toast.LENGTH_LONG).show()
                     println("Dados Sucesso POST = $responseData")
+
                 } else {
                     Toast.makeText(this, "A solicitação POST falhou!", Toast.LENGTH_LONG).show()
                     throwable?.printStackTrace()
