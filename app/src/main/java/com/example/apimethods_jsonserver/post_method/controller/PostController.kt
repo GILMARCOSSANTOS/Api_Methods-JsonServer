@@ -13,6 +13,7 @@ class PostController {
     private val apiService: PostService
 
     init {
+
         val apiConnection = ApiConnection()
         apiService = apiConnection.createService(PostService::class.java)
     }
